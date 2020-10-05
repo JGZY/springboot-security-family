@@ -52,18 +52,18 @@
 				</span>
             </a>
                 <ul class="treeview-menu">
-                    <security:authorize access="hasAnyRole('ROLE_PRODUCT','ROLE_ADMIN')">
+                    <%--<security:authorize access="hasAnyRole('ROLE_PRODUCT','ROLE_ADMIN')">--%>
                         <li id="system-setting"><a
                                 href="${pageContext.request.contextPath}/product/findAll">
                             <i class="fa fa-circle-o"></i> 产品管理
                         </a></li>
-                    </security:authorize>
-                    <security:authorize access="hasAnyRole('ROLE_ORDER','ROLE_ADMIN')">
+                    <%--</security:authorize>--%>
+                    <%--<security:authorize access="hasAnyRole('ROLE_ORDER','ROLE_ADMIN')">--%>
                         <li id="system-setting"><a
                                 href="${pageContext.request.contextPath}/order/findAll">
                             <i class="fa fa-circle-o"></i> 订单管理
                         </a></li>
-                    </security:authorize>
+                    <%--</security:authorize>--%>
                 </ul>
             </li>
         </ul>

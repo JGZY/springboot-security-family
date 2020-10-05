@@ -26,7 +26,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
                 .antMatchers("/login.jsp","/failer.jsp","/css/**","/img/**","/plugins/**","/favicon.ico").permitAll()
-                .antMatchers("/**").hasAnyRole("USER","ADMIN")
+                //.antMatchers("/**").hasAnyRole("ROLE_USER")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin().loginPage("/login.jsp").loginProcessingUrl("/login")

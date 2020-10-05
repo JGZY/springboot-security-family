@@ -11,7 +11,7 @@ public class SysRole implements GrantedAuthority {
     @JsonIgnore
     @Override
     public String getAuthority() {
-        return null;
+        return roleName;
     }
 
     public Integer getId() {
@@ -38,4 +38,12 @@ public class SysRole implements GrantedAuthority {
         this.roleDesc = roleDesc;
     }
 
+    @Override
+    public String toString() {
+        return "SysRole{" +
+                "id=" + id +
+                ", roleName='" + roleName + '\'' +
+                ", roleDesc='" + roleDesc + '\'' +
+                '}';
+    }
 }
