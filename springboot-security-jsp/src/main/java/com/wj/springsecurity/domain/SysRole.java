@@ -38,12 +38,4 @@ public class SysRole implements GrantedAuthority {
         this.roleDesc = roleDesc;
     }
 
-    @Override
-    public String toString() {
-        return "SysRole{" +
-                "id=" + id +
-                ", roleName='" + roleName + '\'' +
-                ", roleDesc='" + roleDesc + '\'' +
-                '}';
-    }
 }
